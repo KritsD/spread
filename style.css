@@ -18,17 +18,18 @@ h1 {
 
 h2 {
     font-family: 'Roboto Mono';
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 p {
     font-family: "neue-haas-grotesk-text";
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 a { 
-    font-family: 'Times New Roman', italic;
-    font-size: 1.2rem;
+    font-family: 'Times New Roman';
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 blockquote {
@@ -37,6 +38,11 @@ blockquote {
 }
 
 .source {
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
+
+footer p {
     font-family: 'Roboto Mono';
     font-size: 1rem;
 }
