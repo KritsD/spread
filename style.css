@@ -1,4 +1,8 @@
 /* Start of CSS here! */
+@import url('nippo.css'); /*font-family: 'Nippo-Bold';*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); /*font-family: 'Roboto Mono', monospace; */
+@import url("https://use.typekit.net/ril2vdl.css"); /*font-family: "neue-haas-grotesk-text"*/
+
 body {
     color: tomato;
 }
