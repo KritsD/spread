@@ -11,7 +11,17 @@ body {
     background-attachment: fixed;
 }
 
+h1 {
+    font-family: 'Nippo';
+    font-size: 6rem;
+}
+
 h2 {
     font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "neue-haas-grotesk-text";
     font-size: 1.2rem;
 }
