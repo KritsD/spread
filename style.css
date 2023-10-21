@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); /*font-family: 'Roboto Mono', monospace; */
 @import url("https://use.typekit.net/ril2vdl.css"); /*font-family: "neue-haas-grotesk-text"*/
 
+
+
 body {
-    color: tomato;
+    color: white;
+    background-image: linear-gradient(rgb(1, 1, 213), rgb(179, 202, 244));
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Roboto Mono';
+    font-size: 1.2rem;
 }
