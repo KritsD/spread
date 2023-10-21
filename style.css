@@ -25,3 +25,18 @@ p {
     font-family: "neue-haas-grotesk-text";
     font-size: 1.2rem;
 }
+
+a { 
+    font-family: 'Times New Roman', italic;
+    font-size: 1.2rem;
+}
+
+blockquote {
+    font-family: 'Nippo';
+    font-size: 3.5rem;
+}
+
+.source {
+    font-family: 'Roboto Mono';
+    font-size: 1rem;
+}
