@@ -30,6 +30,10 @@
     line-height: 1.8rem;
     padding-bottom: 30px;
     }
+    a:not([href^="#"]){ 
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
 }
 
 /* for tablet */
@@ -56,7 +60,11 @@
         font-size: 1.2rem;
         line-height: 2rem;
         padding-bottom: 30px;
-        }
+    }
+    a:not([href^="#"]){ 
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
 
 } 
 
@@ -84,7 +92,11 @@
         font-size: 1.6rem;
         line-height: 2.5rem;
         padding-bottom: 30px;
-        }
+    }
+    a:not([href^="#"]){ 
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
 }
 
 body {
@@ -142,9 +154,8 @@ p {
 
 a:not([href^="#"]){ 
     font-family: 'Times New Roman';
-    font-size: 1.6rem;
     font-style: italic;
-    text-decoration: underline;
+   /* text-decoration: underline;*/
 }
 
 .source {
