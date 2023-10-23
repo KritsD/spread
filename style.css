@@ -29,6 +29,7 @@
     font-size: 1.1rem;
     line-height: 1.8rem;
     padding-bottom: 30px;
+    width: 100%;
     }
     a:not([href^="#"]){ 
         font-size: 1.2rem;
@@ -69,6 +70,7 @@
         font-size: 1.2rem;
         line-height: 2rem;
         padding-bottom: 30px;
+        width: 70%;
     }
     a:not([href^="#"]){ 
         font-size: 1.3rem;
