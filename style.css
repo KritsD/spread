@@ -1,4 +1,4 @@
-/* Start of CSS here!
+/* Start of CSS here!*/
 @import url('nippo.css'); /*font-family: 'Nippo-Bold';*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); /*font-family: 'Roboto Mono', monospace; */
 /* @import url("https://use.typekit.net/ril2vdl.css");; /*font-family: "neue-haas-grotesk-display"*/
@@ -17,9 +17,10 @@
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding-top: 60px;
         padding-bottom: 30px;
+        width: 100%;
     }
 
     h3 {
@@ -58,9 +59,10 @@
     }
 
     h2 {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         padding-top: 70px;
         padding-bottom: 40px;
+        width: 80%;
     }
 
     h3 {
@@ -102,6 +104,7 @@
         font-size: 2.8rem;
         padding-top: 80px;
         padding-bottom: 50px;
+        width: 40%;
     }
 
     h3 {
@@ -111,7 +114,7 @@
         font-size: 1.5rem;
         line-height: 2.2rem;
         padding-bottom: 30px;
-        width: 50%;
+        width: 60%;
     }
     a:not([href^="#"]){ 
         font-size: 1.7rem;
