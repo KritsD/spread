@@ -106,9 +106,10 @@
         font-size: 22rem;
     }
     p {
-        font-size: 1.6rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
         padding-bottom: 30px;
+        width: 50%;
     }
     a:not([href^="#"]){ 
         font-size: 1.7rem;
