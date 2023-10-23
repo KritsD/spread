@@ -1,16 +1,20 @@
 /* Start of CSS here!*/
-@import url('nippo.css'); /*font-family: 'Nippo-Bold';*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap'); /*font-family: 'Roboto Mono', monospace; */
+@import url('nippo.css');
+/*font-family: 'Nippo-Bold';*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Roboto Mono', monospace; */
 /* @import url("https://use.typekit.net/ril2vdl.css");; /*font-family: "neue-haas-grotesk-display"*/
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400'); /*font-family: Inter*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
 
 /* for mobile */
 @media (min-width: 375px) {
-    main { 
+    main {
         margin-left: 40px;
         margin-right: 40px;
     }
+
     h1 {
         font-size: 6rem;
         padding-bottom: 10px;
@@ -26,59 +30,69 @@
     h3 {
         font-size: 10rem;
     }
+
     p {
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    padding-bottom: 30px;
-    width: 100%;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        padding-bottom: 30px;
+        width: 100%;
     }
-    a:not([href^="#"]){ 
+
+    a:not([href^="#"]) {
         font-size: 1.2rem;
         font-weight: 200;
     }
+
     blockquote {
         font-size: 2.3rem;
         line-height: 2.7rem;
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .source {
         font-size: 0.8rem;
     }
+
     ol {
         min-height: 300px;
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    li:nth-child(1), 
+
+    li:nth-child(1),
     li:nth-child(3) {
         text-align: left;
     }
+
     li:nth-child(4),
     li:nth-child(5),
     li:nth-child(7) {
         text-align: center;
     }
-    li:nth-child(2), 
+
+    li:nth-child(2),
     li:nth-child(6),
     li:nth-child(8),
-    li:nth-child(9){
+    li:nth-child(9) {
         text-align: right;
     }
-    li:last-child{
+
+    li:last-child {
         text-align: center;
         justify-content: center;
     }
 }
-    
+
 
 /* for tablet */
 @media (min-width: 600px) {
-	main { 
+    main {
         margin-left: 70px;
         margin-right: 70px;
     }
+
     h1 {
         font-size: 8rem;
         padding-bottom: 30px;
@@ -94,36 +108,42 @@
     h3 {
         font-size: 15rem;
     }
+
     p {
         font-size: 1.2rem;
         line-height: 2rem;
         padding-bottom: 30px;
         width: 70%;
     }
-    a:not([href^="#"]){ 
+
+    a:not([href^="#"]) {
         font-size: 1.3rem;
         font-weight: 200;
     }
+
     blockquote {
         font-size: 3.2rem;
         line-height: 3.7rem;
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     .source {
         font-size: 0.9rem;
-        }
-} 
+    }
+}
 
 /* for desktop */
 @media (min-width: 1280px) {
-	main { 
+    main {
         margin-left: 100px;
-        margin-right: 100px; 
-    } 
+        margin-right: 100px;
+    }
+
     h1 {
         font-size: 10rem;
         padding-bottom: 50px;
+        line-height: 8rem;
     }
 
     h2 {
@@ -136,23 +156,27 @@
     h3 {
         font-size: 22rem;
     }
+
     p {
         font-size: 1.5rem;
         line-height: 2.2rem;
         padding-bottom: 30px;
         width: 60%;
     }
-    a:not([href^="#"]){ 
+
+    a:not([href^="#"]) {
         font-size: 1.7rem;
         font-weight: 200;
     }
+
     blockquote {
-    font-size: 3.5rem;
-    padding-top: 100px;
-    padding-bottom: 100px;
+        font-size: 3.5rem;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
+
     .source {
-    font-size: 1.4rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -164,7 +188,15 @@ body {
 
 h1 {
     font-family: 'Nippo';
+    width: 100%;
+    word-wrap: break-word;
+    justify-content: space-evenly;
+ 
 }
+
+/*.articletitle {
+
+}*/
 
 .letters {
     color: rgb(1, 1, 213);
@@ -207,10 +239,10 @@ p {
     font-weight: 300;
 }
 
-a:not([href^="#"]){ 
+a:not([href^="#"]) {
     font-family: 'Times New Roman';
     font-style: italic;
-   /* text-decoration: underline;*/
+    /* text-decoration: underline;*/
 }
 
 .source {
