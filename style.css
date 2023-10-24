@@ -7,6 +7,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400'); /*font-family: Inter*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 /*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap'); /*font-family: 'Space Grotesk', sans-serif;
+*/
 
 /* for mobile */
 @media (min-width: 375px) {
@@ -34,7 +36,7 @@
     p {
         font-size: 1.1rem;
         line-height: 1.8rem;
-        padding-bottom: 30px;
+        /*padding-bottom: 30px;*/
         width: 100%;
     }
 
@@ -191,15 +193,32 @@
     }
 }
 
-body {
-    color: white;
+/* general */
+
+header {
     background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
     background-attachment: fixed;
 }
 
+
+
+body {
+    color: black;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
 h1 {
-    font-family: 'Nippo';
+    font-family:'Space Grotesk', sans-serif;
     width: 100%;
+    color: white;
 }
 
 .line {
@@ -211,12 +230,45 @@ h1 {
     color: rgb(1, 1, 213);
 }
 
-.author {
-    font-family: 'Roboto Mono';
-    margin-left: 100px;
-    margin-right: 100px;
+.articlebutton {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
+/*
+.author {
+    font-family: 'Roboto Mono';
+    display: inline;
+    text-align: center;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 5px;
+
+.author {
+    display: inline-block;
+    width: 100%;
+}
+
+section:nth-child(2) p {
+    display: inline-block;
+}
+
+section:nth-child(1) p {
+	display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 80px;
+    padding: 5px;
+	white-space: pre;
+    width: 100px;
+} }*/
+
+/* chapters */
 .nav {
     font-family: 'Roboto Mono';
     margin-left: 100px;
@@ -228,7 +280,7 @@ h1 {
 }
 
 blockquote {
-    font-family: 'Nippo';
+    font-family: 'Times New Roman';
 
 }
 
