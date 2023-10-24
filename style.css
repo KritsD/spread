@@ -94,7 +94,7 @@
     }
 
     a:not([href^="#"]) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 200;
     }
     
@@ -147,14 +147,14 @@
     }
 
     p {
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
         padding-bottom: 30px;
         width: 60%;
     }
 
     a:not([href^="#"]) {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-weight: 200;
     }
 
@@ -236,7 +236,7 @@ blockquote {
     font-family: 'Times New Roman';
     background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
     -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
 }
 
 ol {
