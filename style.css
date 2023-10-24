@@ -39,15 +39,15 @@
     }
 
     a:not([href^="#"]) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 200;
     }
 
     blockquote {
-        font-size: 2.3rem;
-        line-height: 2.7rem;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        font-size: 2.1rem;
+        line-height: 2.5rem;
+        padding-top: 70px;
+        padding-bottom: 70px;
         justify-content: center;
     }
 
@@ -97,7 +97,7 @@
     }
 
     a:not([href^="#"]) {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 200;
     }
     
@@ -106,10 +106,10 @@
     }   
 
     blockquote {
-        font-size: 3.2rem;
-        line-height: 3.7rem;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        font-size: 2.9rem;
+        line-height: 3.3rem;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
 
     .source {
@@ -154,18 +154,19 @@
 
     p {
         font-size: 1.5rem;
-        line-height: 2.2rem;
+        line-height: 2.4rem;
         padding-bottom: 30px;
         width: 60%;
     }
 
     a:not([href^="#"]) {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: 200;
     }
 
     blockquote {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
+        line-height: 3.7rem;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -235,7 +236,9 @@ h1 {
 
 blockquote {
     font-family: 'Times New Roman';
-
+    background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
 }
 
 ol {
@@ -264,6 +267,8 @@ li:nth-child(9) {
 li:last-child {
     text-align: center;
     justify-content: center;
+    font-family: 'Roboto Mono';
+    color: rgb(255, 0, 0);
     }
 
 h2 {
@@ -286,10 +291,6 @@ a:not([href^="#"]) {
     font-family: 'Times New Roman';
     font-style: italic;
     /* text-decoration: underline;*/
-}
-
-.source {
-    font-family: 'Roboto Mono';
 }
 
 footer p {
