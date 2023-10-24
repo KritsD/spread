@@ -16,15 +16,13 @@
     }
 
     h1 {
-        font-size: 6rem;
-        padding-bottom: 10px;
+        font-size: 3.8rem;
     }
 
     h2 {
         font-size: 1.5rem;
         padding-top: 10px;
-        padding-bottom: 23px;
-        width: 100%;
+        padding-bottom: 10px;
     }
 
     h3 {
@@ -34,7 +32,8 @@
     p {
         font-size: 1rem;
         line-height: 1.6rem;
-        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 15px;
     }
 
@@ -55,12 +54,10 @@
         font-size: 0.8rem;
     }
 
-    ol {
+    ol/*:not([class^="styletitle"])*/ {
         min-height: 300px;
-        display: flex;
         text-align: center;
         justify-content: center;
-        margin-left: 10%;
     }
 }
 
@@ -73,7 +70,7 @@
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 5rem;
         padding-bottom: 30px;
     }
 
@@ -102,7 +99,7 @@
     }
     
     ol { 
-    justify-content: left;
+    justify-content: center;
     }   
 
     blockquote {
@@ -126,13 +123,11 @@
 
     h1 {
         font-size: 10rem;
-        padding-bottom: 5px;
-        /*line-height: 0rem;*/
     }
 
-    .articletitle {
-        line-height: 10px;
-    }
+    ol { 
+        justify-content: center;
+    }  
 
     h2 {
         font-size: 2.3rem;
@@ -149,11 +144,10 @@
         float: right;
         top: 0;
         right: 0;
-        z-index: -1;
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 2.4rem;
         padding-bottom: 30px;
         width: 60%;
@@ -180,7 +174,13 @@
 
 header {
     background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
+    display: 100%;
+    padding-top: 20px;
     /*background-attachment: fixed;*/
+}
+
+.styletitle {
+    align-content: center;
 }
 
 body {
@@ -195,7 +195,6 @@ body {
 hr {
     display: block;
     height: 5px;
-    /*border: 0;*/
     border-top: 1px solid grey;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -203,7 +202,6 @@ hr {
 
 h1 {
     font-family:'Space Grotesk', sans-serif;
-    width: 100%;
     color: white;
 }
 
@@ -212,7 +210,7 @@ h1 {
     justify-content: space-evenly;
 }
 
-.letters {
+.jumbled {
     color: rgb(1, 1, 213);
 }
 
@@ -268,7 +266,6 @@ li:last-child {
     text-align: center;
     justify-content: center;
     font-family: 'Roboto Mono';
-    color: rgb(255, 0, 0);
     }
 
 h2 {
