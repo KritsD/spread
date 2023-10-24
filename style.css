@@ -121,6 +121,10 @@
         margin-right: 100px;
     }
 
+    hr {
+        width: 70%;
+    }
+
     h1 {
         font-size: 10rem;
     }
@@ -192,6 +196,10 @@ body {
     padding-bottom: 20px;
 }
 
+hr :first-child {
+    width:100%;
+}
+
 hr {
     display: block;
     height: 5px;
@@ -222,11 +230,18 @@ h1 {
 }
 
 /* chapters */
+
+/*main {
+    display: flex;
+    flex-direction: column;
+}*/
+
 .nav {
     font-family: 'Roboto Mono';
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 850px;
+    margin-right: 10px;
 }
+
 
 .chapternav {
     font-family: 'Roboto Mono';
