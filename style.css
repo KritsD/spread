@@ -12,7 +12,7 @@
     --typography-base: 1rem; /* 1 rem is p */
 
     --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
-
+    --typography-h2: calc(3 * var(--typography-base)); /*chapter title */
     --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
 
     --gutter: var(--typography-base);
@@ -30,6 +30,8 @@
             --typography-base: 1rem;
 
             --typography-h1: calc(4 * var(--typography-base));
+            --typography-h2: calc(20 * var(--typography-base));
+            --typography-h3: calc(4 * var(--typography-base));
 
             --gutter: var(--typography-base);
         }
@@ -52,6 +54,14 @@
     h1 {
         font-size: var(--typography-h1); 
     }
+
+    h2 {
+        font-size: var(--typograhy-h2);
+    }
+
+    h3 {
+        font-size: var(--typography-h3);
+    }
 }
 
 h1 {
@@ -60,7 +70,15 @@ h1 {
 
 
 h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* chapter number */
+h3 {
     font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(1, 1, 213);
 }
 
 p {
