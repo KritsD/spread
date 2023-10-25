@@ -22,11 +22,12 @@
     h2 {
         font-size: 1.5rem;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
     }
 
     h3 {
         font-size: 4rem;
+        padding-top: 5px;
     }
 
     p {
@@ -51,10 +52,10 @@
     }
 
     .source {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
-    ol/*:not([class^="styletitle"])*/ {
+    ol {
         min-height: 300px;
         text-align: center;
         justify-content: center;
@@ -115,7 +116,7 @@
     }
 
     .source {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
@@ -175,7 +176,7 @@
     }
 
     .source {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 }
 
@@ -309,9 +310,14 @@ p {
 }
 
 a:not([href^="#"]) {
+    color: black;
     font-family: 'Times New Roman';
     font-style: italic;
     /* text-decoration: underline;*/
+}
+
+a:not([href^="#"]):hover{
+    color: rgb(1, 1, 213);
 }
 
 footer p {
