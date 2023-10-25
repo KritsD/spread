@@ -69,6 +69,10 @@
         margin-right: 70px;
     }
 
+    hr {
+        width: 70%;
+    }
+
     h1 {
         font-size: 5rem;
         padding-bottom: 30px;
@@ -87,10 +91,10 @@
     }
 
     p {
-        font-size: 1rem;
-        line-height: 1.7rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
         padding-bottom: 30px;
-        width: 70%;
+        width: 45%;
     }
 
     a:not([href^="#"]) {
@@ -107,6 +111,7 @@
         line-height: 3.3rem;
         padding-top: 70px;
         padding-bottom: 70px;
+        max-width: 40%;
     }
 
     .source {
@@ -151,10 +156,10 @@
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         padding-bottom: 30px;
-        width: 60%;
+        width: 50%;
     }
 
     a:not([href^="#"]) {
@@ -287,6 +292,10 @@ h2 {
     font-family: 'Roboto Mono';
 }
 
+h2 em {
+    color: rgb(1, 1, 213);
+}
+
 h3 {
     font-family: 'Times New Roman';
     font-style: italic;
@@ -296,7 +305,7 @@ h3 {
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 350;
 }
 
 a:not([href^="#"]) {
