@@ -9,41 +9,63 @@
 */
 
 :root {
-    --typography-base: 1rem;
+    --typography-base: 1rem; /* 1 rem is p */
 
-    --typogaphy-h1: calc(4 * var(--typgraphy-base));
+    --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
+
     --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
 
-    /*--foreground-color: rgb(1, 1, 213), rgb(0, 10, 87); */
+    --gutter: var(--typography-base);
+
+}
+
+@media screen {
+    body > header {
+        background-image: var(--background-image);
+    }
 }
 
 @media (min-width: 375px) {
     :root {
             --typography-base: 1rem;
-            --typogaphy-h3: calc(4 * var(--typgraphy-base));
+
+            --typography-h1: calc(4 * var(--typography-base));
+
+            --gutter: var(--typography-base);
+        }
+
+    p {
+            font-size: var(--typography-base);
+            padding-top: calc(1 * var(--gutter));
         }
 
     body > header {
-		background-image: var(--background-image);
-        color: white;
+		    background-image: var(--background-image);
+            color: white;
 	}
-}
 
+    main {
+        margin-left: var(--gutter);
+        margin-right:var(--gutter);
+    }
 
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: var(--font-size); /* Use the size. */
-    padding: var(--spacing); /* Use the spacing. */
+    h1 {
+        font-size: var(--typography-h1); 
+    }
 }
 
 h1 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+
 h2 {
     font-family: 'Times New Roman';
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 
