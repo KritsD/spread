@@ -152,6 +152,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        scroll-behavior: smooth; 
     }
     
     main {
@@ -181,6 +182,7 @@
         padding-right: 10px;
         padding-left: 10px;
         margin-top: 10px;
+        min-width: 22em;
     }
 
     hr {
@@ -188,7 +190,7 @@
     }
 
     h1 {
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     ol { 
@@ -255,6 +257,13 @@ header {
     margin-bottom: 30px;
 }
 
+/* header, article name */
+
+h1 {
+    font-family:'Space Grotesk', sans-serif;
+    color: white;
+}
+
 .styletitle {
     align-content: center;
 }
@@ -263,32 +272,18 @@ header {
     padding-top: 20px;
 }
 
+/*link to original article*/
+.articlebutton {
+    padding-left: 20px;
+    color:rgb(1, 1, 213);
+}
+
+
 body {
     color: black;
 }
 
-.chapter {
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-hr :first-child {
-    width:100%;
-}
-
-hr {
-    display: block;
-    height: 5px;
-    border-top: 1px solid grey;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-h1 {
-    font-family:'Space Grotesk', sans-serif;
-    color: white;
-}
-
+/* attempt for the matrix-like header
 .line {
     word-wrap: break-word;
     justify-content: space-evenly;
@@ -296,9 +291,9 @@ h1 {
 
 .jumbled {
     color: rgb(1, 1, 213);
-}
+} */
 
-/* chapters */
+/* chapter nav*/
 
 nav {
     font-family: 'Roboto Mono';
@@ -306,10 +301,19 @@ nav {
 
 button {
     font-family: 'Roboto Mono';
-    background: blue;
+    background: rgb(1, 1, 213);
     color: white;
     border-radius: 8px;
 }
+
+button:hover {
+    background: white;
+    border-color: 2px rgb(1, 1, 213);
+    border-style: solid;
+    color: rgb(1, 1, 213);
+}
+
+/* start of blockquote styling */
 
 blockquote {
     font-family: 'Times New Roman';
@@ -347,6 +351,15 @@ li:last-child {
     font-family: 'Roboto Mono';
     }
 
+/* end of blockquote styling */
+
+/* chapter title */
+.chapter {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* I evoke title style*/
 h2 {
     font-family: 'Roboto Mono';
 }
@@ -355,6 +368,7 @@ h2 em {
     color: rgb(1, 1, 213);
 }
 
+/* big number */
 h3 {
     font-family: 'Times New Roman';
     font-style: italic;
@@ -362,11 +376,26 @@ h3 {
     color: rgb(1, 1, 213);
 }
 
+/* black line */
+
+hr :first-child {
+    width:100vw;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border-top: 1px solid grey;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 350;
 }
 
+/* in-body links */
 a:not([href^="#"]) {
     color: black;
     font-family: 'Times New Roman';
@@ -378,6 +407,7 @@ a:not([href^="#"]):hover{
     color: rgb(1, 1, 213);
 }
 
+/* footer */
 footer p {
     font-family: 'Roboto Mono';
 }
