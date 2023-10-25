@@ -8,7 +8,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap'); /*font-family: 'Space Grotesk', sans-serif;
 */
 
-/* for mobile */
+:root {
+    --typography-base: 1rem;
+
+    --typogaphy-h1: calc(4 * var(--typgraphy-base));
+    --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
+
+    /*--foreground-color: rgb(1, 1, 213), rgb(0, 10, 87); */
+}
+
+@media (min-width: 375px) {
+    :root {
+            --typography-base: 1rem;
+            --typogaphy-h3: calc(4 * var(--typgraphy-base));
+        }
+
+    body > header {
+		background-image: var(--background-image);
+        color: white;
+	}
+}
+
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size); /* Use the size. */
+    padding: var(--spacing); /* Use the spacing. */
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+}
+
+
+
+/* for mobile 
 @media (min-width: 375px) {
     main {
         margin-left: 30px;
@@ -23,7 +63,7 @@
         float: center;
         justify-content: center;
         max-width: 50%;
-        /*flex-wrap: wrap;*/
+        !!!!flex-wrap: wrap;!!!!
         top: 32px;
     }
 
@@ -90,14 +130,14 @@
         line-height: 1.2rem;
         color: rgb(116, 115, 115);
     }
-}
+} */
 
-/* for tablet */
+/* for tablet 
 @media (min-width: 600px) {
     html {
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
+        !!!!align-items: center;!!!!
         scroll-behavior: smooth; 
     }
     
@@ -121,9 +161,9 @@
         float: right;
         margin-left: 70%;
         max-width: 20%;
-        /*flex-wrap: wrap;*/
+        !!!!flex-wrap: wrap;!!!!
         top: 32px;
-        height: 0; /*an anchor point for the nav, resets the height*/
+        height: 0; !!!!an anchor point for the nav, resets the height!!!!
     }
 
     button {
@@ -204,15 +244,15 @@
         font-size: 0.8rem;
         line-height: 1.2rem;
         color: rgb(116, 115, 115);
-    }
-}
+    } 
+}*/
 
-/* for desktop */
+/* for desktop 
 @media (min-width: 1280px) {
     html {
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
+        !!!!align-items: center;!!!!
         scroll-behavior: smooth; 
     }
     
@@ -236,9 +276,9 @@
         float: right;
         margin-left: 70%;
         max-width: 30%;
-        /*flex-wrap: wrap;*/
+        !!!!flex-wrap: wrap;!!!!
         top: 32px;
-        height: 0; /*an anchor point for the nav, resets the height*/
+        height: 0; !!!!an anchor point for the nav, resets the height!!!!
     }
 
     button {
@@ -309,20 +349,20 @@
     footer p {
         font-size: 0.9rem;
         line-height: 1.5rem;
-    }
-}
+    } 
+} */
 
-/* general */
+/* general 
 
 header {
     background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
     display: 100%;
     padding-top: 20px;
-    /*background-attachment: fixed;*/
+    !!!!background-attachment: fixed;!!!!
     margin-bottom: 30px;
 }
 
-/* header, article name */
+!!!! header, article name !!!!
 
 h1 {
     font-family:'Space Grotesk', sans-serif;
@@ -337,7 +377,7 @@ h1 {
     padding-top: 20px;
 }
 
-/*link to original article*/
+!!!!link to original article!!!!
 .articlebutton {
     padding-left: 20px;
     color:rgb(1, 1, 213);
@@ -348,7 +388,7 @@ body {
     color: black;
 }
 
-/* attempt for the matrix-like header
+/!!!!attempt for the matrix-like header
 .line {
     word-wrap: break-word;
     justify-content: space-evenly;
@@ -356,9 +396,9 @@ body {
 
 .jumbled {
     color: rgb(1, 1, 213);
-} */
+} !!!!
 
-/* chapter nav*/
+!!!!chapter nav!!!!
 
 nav {
     font-family: 'Roboto Mono';
@@ -378,7 +418,7 @@ button:hover {
     color: rgb(1, 1, 213);
 }
 
-/* start of blockquote styling */
+!!!!start of blockquote styling!!!!
 
 blockquote {
     font-family: 'Times New Roman';
@@ -416,15 +456,15 @@ li:last-child {
     font-family: 'Roboto Mono';
     }
 
-/* end of blockquote styling */
+!!!!end of blockquote styling!!!!
 
-/* chapter title */
+!!!!chapter title!!!!
 .chapter {
     padding-top: 40px;
     padding-bottom: 20px;
 }
 
-/* I evoke title style*/
+!!!! I evoke title style !!!!
 h2 {
     font-family: 'Roboto Mono';
 }
@@ -433,7 +473,7 @@ h2 em {
     color: rgb(1, 1, 213);
 }
 
-/* big number */
+!!!!big number!!!!
 h3 {
     font-family: 'Times New Roman';
     font-style: italic;
@@ -441,7 +481,7 @@ h3 {
     color: rgb(1, 1, 213);
 }
 
-/* black line */
+!!!!black line !!!!
 
 hr :first-child {
     width:100vw;
@@ -460,19 +500,19 @@ p {
     font-weight: 350;
 }
 
-/* in-body links */
+!!!!in-body links !!!!
 a:not([href^="#"]) {
     color: black;
     font-family: 'Times New Roman';
     font-style: italic;
-    /* text-decoration: underline;*/
+    !!!!text-decoration: underline;!!!!
 }
 
 a:not([href^="#"]):hover{
     color: rgb(1, 1, 213);
 }
 
-/* footer */
+!!!! footer !!!!
 footer p {
     font-family: 'Roboto Mono';
-}
+} */
