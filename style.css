@@ -58,17 +58,30 @@
         font-size: var(--typography-h1); 
     }
 
+    .chapter {
+        margin-top: calc(2.5 * var(--gutter));
+    }
+
+    hr {
+        margin-top: calc(2 * var(--gutter));
+        margin-bottom: calc(1 * var(--gutter));
+    }
     /* NEED TO FIX THIS! */
     h2 {
         font-size: var(--typograhy-h2);
     }
 
+    /* chapter number*/
     h3 {
         font-size: var(--typography-h3);
     }
 
     h2 > em { 
         font-size: var(--typography-h2);
+    }
+
+    a:not([href^="#"]) {
+        font-size: calc(1.2 *var(--typgraphy-base));
     }
 
     blockquote {
@@ -84,14 +97,25 @@
     }
 
     .source {
-        font-size: calc(1 * var(--typography-base));
+        font-size: calc(0.8 * var(--typography-base));
     }
 }
 
+/* START OF GENERAL CODE, APPLIES TO ALL! */
 h1 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+/* straight line across*/
+hr :first-child {
+    width:100vw; /*should take up the whole screen?*/
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border-top: 1px solid grey;
+}
 
 h2 {
     font-family: 'Roboto Mono', monospace;
@@ -109,11 +133,26 @@ h3 {
     color: rgb(1, 1, 213);
 }
 
+/* body text*/
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
+/* links in body */
+a:not([href^="#"]) {
+    color: black;
+    font-family: 'Times New Roman';
+    font-style: italic;
+
+    /*font-weight: bold;*/
+}
+
+a:not([href^="#"]):hover{
+    color: rgb(1, 1, 213);
+}
+
+/*start of blockquote styling*/
 blockquote {
     font-family: 'Times New Roman';
     background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
@@ -150,7 +189,6 @@ li:last-child {
     }
 
 /*end of blockquote styling*/
-
 
 
 /* for mobile 
