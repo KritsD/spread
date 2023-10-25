@@ -13,6 +13,7 @@
 
     --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
     --typography-h2: calc(3 * var(--typography-base)); /*chapter title */
+    --typography-blockquote: calc(3 * var(--typography-base)); /*blockquote*/
     --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
 
     --gutter: var(--typography-base);
@@ -30,8 +31,9 @@
             --typography-base: 1rem;
 
             --typography-h1: calc(4 * var(--typography-base));
-            --typography-h2: calc(20 * var(--typography-base));
+            --typography-h2: calc(1.5 * var(--typography-base));
             --typography-h3: calc(4 * var(--typography-base));
+            --typography-blockquote: calc(2.2 * var(--typography-base));
 
             --gutter: var(--typography-base);
         }
@@ -39,6 +41,7 @@
     p {
             font-size: var(--typography-base);
             padding-top: calc(1 * var(--gutter));
+            line-height: calc(1.5 * var(--gutter));
         }
 
     body > header {
@@ -47,20 +50,41 @@
 	}
 
     main {
-        margin-left: var(--gutter);
-        margin-right:var(--gutter);
+        margin-left: calc(1.2 * var(--gutter));
+        margin-right: calc(1.5 * var(--gutter));
     }
 
     h1 {
         font-size: var(--typography-h1); 
     }
 
+    /* NEED TO FIX THIS! */
     h2 {
         font-size: var(--typograhy-h2);
     }
 
     h3 {
         font-size: var(--typography-h3);
+    }
+
+    h2 > em { 
+        font-size: var(--typography-h2);
+    }
+
+    blockquote {
+        padding-top: calc(1.2 * var(--typography-blockquote));
+        padding-bottom: var(--typography-blockquote);
+        margin-left: var(--typography-blockquote);
+        margin-right: var(--typography-blockquote);
+    }
+
+    blockquote > li {
+        font-size: var(--typography-blockquote);
+        /*padding-top: calc(3 * var(--gutter));*/
+    }
+
+    .source {
+        font-size: calc(1 * var(--typography-base));
     }
 }
 
@@ -71,6 +95,10 @@ h1 {
 
 h2 {
     font-family: 'Roboto Mono', monospace;
+}
+
+h2 > em {
+    color: rgb(1, 1, 213); 
 }
 
 /* chapter number */
@@ -85,6 +113,43 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+blockquote {
+    font-family: 'Times New Roman';
+    background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+
+ol {
+    display: flex;
+}
+
+li:nth-child(1),
+li:nth-child(3) {
+     text-align: left;
+}
+
+li:nth-child(4),
+li:nth-child(5),
+li:nth-child(7) {
+    text-align: center;
+}
+
+li:nth-child(2),
+li:nth-child(6),
+li:nth-child(8),
+li:nth-child(9) {
+    text-align: right;
+}
+
+li:last-child {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto Mono';
+    }
+
+/*end of blockquote styling*/
 
 
 
