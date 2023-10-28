@@ -160,6 +160,44 @@
         line-height: calc(1.3 * var(--gutter));
     }
 }
+/* end of media screen 375 */
+
+@media (min-width: 650px) {
+
+    html {
+        display: flex;
+        flex-direction: column;
+        scroll-behavior: smooth; 
+    }
+
+    main {
+        margin-left: 70px;
+        margin-right: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    article {
+            width: 60%;
+            float: left;
+            top: 0;
+    }
+    
+    aside {
+        position: sticky;
+        float: right;
+        margin-left: 70%;
+        max-width: 20%;
+        /*flex-wrap: wrap;*/
+        top: 32px;
+        height: 0; /*an anchor point for the nav, resets the height*/
+    }
+}
+
+
+
 
 /* START OF GENERAL CODE, APPLIES TO ALL! */
 h1 {
@@ -266,6 +304,9 @@ footer p {
     font-family: 'Roboto Mono';
     color: rgb(116, 115, 115);
 }
+
+
+
 
 
 /* for mobile 
