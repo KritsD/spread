@@ -53,8 +53,8 @@
     body > header {
 		    background-image: var(--background-image);
             color: white;
-            padding-top: 22vh;
-            padding-bottom: 22vh;
+            padding-top: 24vh;
+            padding-bottom: 24vh;
         }
 
     header > ol {
@@ -91,6 +91,10 @@
         border-radius: 8px;
     }
 
+    button:hover {
+        border: 1px;
+    }
+
     main, 
     footer {
         margin-left: calc(1.5 * var(--gutter));
@@ -117,16 +121,13 @@
     }
     /* NEED TO FIX THIS! */
     h2 {
-        font-size: var(--typograhy-h2);
+        font-size: var(--typography-h2);
+        padding-bottom: calc(1 * var(--gutter));
     }
 
     /* chapter number*/
     h3 {
         font-size: var(--typography-h3);
-    }
-
-    h2 > em { 
-        font-size: var(--typography-h2);
     }
 
     a:not([href^="#"]) {
@@ -184,7 +185,7 @@ button {
 
 button:hover {
     background: white;
-    border-color: 2px rgb(1, 1, 213);
+    border-color: rgb(1, 1, 213);
     border-style: solid;
     color: rgb(1, 1, 213); 
 }
@@ -194,7 +195,7 @@ h2 {
 }
 
 h2 > em {
-    color: rgb(1, 1, 213); 
+    color: rgb(1, 1, 213);
 }
 
 /* chapter number */
@@ -216,12 +217,12 @@ a:not([href^="#"]) {
     color: black;
     font-family: 'Times New Roman';
     font-style: italic;
-
+    color: rgb(1, 1, 213);
     /*font-weight: bold;*/
 }
 
 a:not([href^="#"]):hover{
-    color: rgb(1, 1, 213);
+    color: grey;
 }
 
 /*start of blockquote styling*/
