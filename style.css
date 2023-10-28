@@ -14,6 +14,7 @@
     --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
     --typography-h2: calc(3 * var(--typography-base)); /*chapter title */
     --typography-blockquote: calc(3 * var(--typography-base)); /*blockquote*/
+    --typography-a: calc(0.5 * var(--typography-base)); /*a*/
     --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
 
     --gutter: var(--typography-base);
@@ -34,6 +35,7 @@
             --typography-h2: calc(1.5 * var(--typography-base));
             --typography-h3: calc(4 * var(--typography-base));
             --typography-blockquote: calc(2.2 * var(--typography-base));
+            --typography-a: calc(0.9 * var(--typography-base));
 
             --gutter: var(--typography-base);
         }
@@ -49,8 +51,22 @@
             color: white;
 	}
 
+    a {
+        font-size: var(--typography-a);
+    }
+
+    button {
+        padding-top: calc(0.3 * var(--gutter));
+        padding-bottom: calc(0.3 * var(--gutter));
+        padding-right: calc(0.5 * var(--gutter));
+        padding-left: calc(0.5 * var(--gutter));
+        margin-top: calc(0.4 * var(--gutter));
+        min-width: 8em;
+        border-radius: 8px;
+    }
+
     main {
-        margin-left: calc(1.2 * var(--gutter));
+        margin-left: calc(1.5 * var(--gutter));
         margin-right: calc(1.5 * var(--gutter));
     }
 
@@ -99,6 +115,7 @@
     .source {
         font-size: calc(0.8 * var(--typography-base));
     }
+
 }
 
 /* START OF GENERAL CODE, APPLIES TO ALL! */
@@ -115,6 +132,19 @@ hr {
     display: block;
     height: 5px;
     border-top: 1px solid grey;
+}
+
+button {
+    font-family: 'Roboto Mono';
+    background: rgb(1, 1, 213);
+    color: white;
+}
+
+button:hover {
+    background: white;
+    border-color: 2px rgb(1, 1, 213);
+    border-style: solid;
+    color: rgb(1, 1, 213); 
 }
 
 h2 {
