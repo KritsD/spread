@@ -26,6 +26,8 @@
 @media screen {
     body > header {
         background-image: var(--background-image);
+        padding-top: 20vh;
+        padding-bottom: 20vh;
     }
 }
 
@@ -33,7 +35,7 @@
     :root {
             --typography-base: 1rem;
 
-            --typography-h1: calc(4 * var(--typography-base));
+            --typography-h1: calc(3.8 * var(--typography-base));
             --typography-h2: calc(1.5 * var(--typography-base));
             --typography-h3: calc(4 * var(--typography-base));
             --typography-blockquote: calc(2.2 * var(--typography-base));
@@ -43,16 +45,26 @@
             --gutter: var(--typography-base);
         }
 
-    p {
-            font-size: var(--typography-base);
-            padding-top: calc(1 * var(--gutter));
-            line-height: calc(1.5 * var(--gutter));
-        }
+    header {
+        padding-left: calc(2 * var(--gutter));
+        padding-right: calc(2 * var(--gutter));
+    }
 
     body > header {
 		    background-image: var(--background-image);
             color: white;
-	}
+            padding-top: 22vh;
+            padding-bottom: 22vh;
+        }
+
+    header > ol {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: var(--typography-h1); 
+    }
 
     a {
         font-size: var(--typography-a);
@@ -85,12 +97,14 @@
         margin-right: calc(1.5 * var(--gutter));
     }
 
-    aside {
-        max-width: 20em;
+    p {
+        font-size: var(--typography-base);
+        padding-top: calc(1 * var(--gutter));
+        line-height: calc(1.5 * var(--gutter));
     }
 
-    h1 {
-        font-size: var(--typography-h1); 
+    aside {
+        max-width: 20em;
     }
 
     .chapter {
