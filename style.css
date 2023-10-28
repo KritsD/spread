@@ -31,6 +31,7 @@
     }
 }
 
+/* Mobile */
 @media (min-width: 375px) {
     :root {
             --typography-base: 1rem;
@@ -66,33 +67,14 @@
         font-size: var(--typography-h1); 
     }
 
-    a {
-        font-size: var(--typography-a);
-    }
-
     ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /*gap: calc(4 * var(--gutter));*/
     }
 
     .author {
         width: 100%;
-    }
-
-    button {
-        padding-top: calc(0.3 * var(--gutter));
-        padding-bottom: calc(0.3 * var(--gutter));
-        padding-right: calc(0.5 * var(--gutter));
-        padding-left: calc(0.5 * var(--gutter));
-        margin-top: calc(0.4 * var(--gutter));
-        min-width: 8em;
-        border-radius: 8px;
-    }
-
-    button:hover {
-        border: 1px;
     }
 
     main, 
@@ -108,7 +90,7 @@
     }
 
     aside {
-        max-width: 20em;
+       display: none;
     }
 
     .chapter {
@@ -119,7 +101,7 @@
         margin-top: calc(1 * var(--gutter));
         margin-bottom: calc(1 * var(--gutter));
     }
-    /* NEED TO FIX THIS! */
+    
     h2 {
         font-size: var(--typography-h2);
         padding-bottom: calc(1 * var(--gutter));
@@ -162,20 +144,32 @@
 }
 /* end of media screen 375 */
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
+    :root {
+        --typography-base: 1rem;
+        --typography-a: calc(0.6 * var(--typography-base));
+    }
 
+    aside {
+        display: none;
+    }
+
+    main,
+    footer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    article,
+    footer {
+        max-width: 70%;
+    }
 }
 
 @media (min-width: 650px) {
-
     :root {
         --typography-base: 1rem;
-
         --typography-a: calc(0.8 * var(--typography-base));
-    }
-
-    a {
-        font-size: var(--typography-a);
     }
 
     html {
@@ -184,9 +178,13 @@
         scroll-behavior: smooth; 
     }
 
+    a {
+        font-size: var(--typography-a);
+    }
+
     main {
-        margin-left: 70px;
-        margin-right: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -194,9 +192,9 @@
     }
 
     article {
-            width: 60%;
-            float: left;
-            top: 0;
+        width: 60%;
+        float: left;
+        top: 0;
     }
     
     aside {
@@ -204,7 +202,6 @@
         float: right;
         margin-left: 70%;
         max-width: 30%;
-        /*flex-wrap: wrap;*/
         top: 32px;
         height: 0; /*an anchor point for the nav, resets the height*/
     }
@@ -215,14 +212,47 @@
         padding-right: 8px;
         padding-left: 8px;
         margin-top: 5px;
-        /*min-width: 10em;*/
+        min-width: 10em;
+    }
+
+    /* Navigation Bar */
+    aside {
+        position: sticky;
+        float: right;
+        display: contents;
+        margin-left: 70%;
+        max-width: 30%;
+        /*flex-wrap: wrap;*/
+        top: 32px;
+        height: 0; /*an anchor point for the nav, resets the height*/
+    }
+
+    a {
+        font-size: var(--typography-a);   
+    }
+
+    button {
+        padding-top: calc(0.3 * var(--gutter));
+        padding-bottom: calc(0.3 * var(--gutter));
+        padding-right: calc(0.5 * var(--gutter));
+        padding-left: calc(0.5 * var(--gutter));
+        margin-top: calc(0.4 * var(--gutter));
+        min-width: 8em;
+        border-radius: 8px;
+    }
+
+    button:hover {
+        border: 1px;
+    }
+
+    footer {
+        width: 60%;
     }
 
 }
 
-
-
 /* START OF GENERAL CODE, APPLIES TO ALL! */
+
 h1 {
     font-family: 'Space Grotesk', sans-serif;
 }
