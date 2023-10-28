@@ -55,6 +55,17 @@
         font-size: var(--typography-a);
     }
 
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /*gap: calc(4 * var(--gutter));*/
+    }
+
+    .author {
+        width: 100%;
+    }
+
     button {
         padding-top: calc(0.3 * var(--gutter));
         padding-bottom: calc(0.3 * var(--gutter));
@@ -70,6 +81,10 @@
         margin-right: calc(1.5 * var(--gutter));
     }
 
+    aside {
+        max-width: 20em;
+    }
+
     h1 {
         font-size: var(--typography-h1); 
     }
@@ -79,7 +94,7 @@
     }
 
     hr {
-        margin-top: calc(2 * var(--gutter));
+        margin-top: calc(1 * var(--gutter));
         margin-bottom: calc(1 * var(--gutter));
     }
     /* NEED TO FIX THIS! */
@@ -192,6 +207,7 @@ blockquote {
 
 ol {
     display: flex;
+    justify-content: center;
 }
 
 li:nth-child(1),
