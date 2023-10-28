@@ -217,12 +217,10 @@ a:not([href^="#"]) {
     color: black;
     font-family: 'Times New Roman';
     font-style: italic;
-    color: rgb(1, 1, 213);
-    /*font-weight: bold;*/
 }
 
 a:not([href^="#"]):hover{
-    color: grey;
+    color: rgb(1, 1, 213);
 }
 
 /*start of blockquote styling*/
