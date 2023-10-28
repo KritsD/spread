@@ -14,7 +14,9 @@
     --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
     --typography-h2: calc(3 * var(--typography-base)); /*chapter title */
     --typography-blockquote: calc(3 * var(--typography-base)); /*blockquote*/
-    --typography-a: calc(0.5 * var(--typography-base)); /*a*/
+    --typography-a: calc(0.5 * var(--typography-base)); /* nav links */
+    --typography-footerp: calc(0.8 *var(var(--typography-base)));
+
     --background-image: linear-gradient(rgb(1, 1, 213), rgb(0, 10, 87));
 
     --gutter: var(--typography-base);
@@ -35,6 +37,7 @@
             --typography-h2: calc(1.5 * var(--typography-base));
             --typography-h3: calc(4 * var(--typography-base));
             --typography-blockquote: calc(2.2 * var(--typography-base));
+            --typography-footerp: calc(0.8 * var(--typography-base));
             --typography-a: calc(0.9 * var(--typography-base));
 
             --gutter: var(--typography-base);
@@ -76,7 +79,8 @@
         border-radius: 8px;
     }
 
-    main {
+    main, 
+    footer {
         margin-left: calc(1.5 * var(--gutter));
         margin-right: calc(1.5 * var(--gutter));
     }
@@ -131,6 +135,15 @@
         font-size: calc(0.8 * var(--typography-base));
     }
 
+    footer {
+        margin-top: calc(4 * var(--gutter));
+        margin-bottom: calc(2 * var(--gutter));
+    }
+
+    footer p {
+        font-size: var(--typography-footerp);
+        line-height: calc(1.3 * var(--gutter));
+    }
 }
 
 /* START OF GENERAL CODE, APPLIES TO ALL! */
@@ -235,6 +248,11 @@ li:last-child {
     }
 
 /*end of blockquote styling*/
+
+footer p {
+    font-family: 'Roboto Mono';
+    color: rgb(116, 115, 115);
+}
 
 
 /* for mobile 
