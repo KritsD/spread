@@ -151,10 +151,6 @@
         --typography-a: calc(0.6 * var(--typography-base));
     }
 
-    aside {
-        display: none;
-    }
-
     body > header {
         padding-top: 20vh;
         padding-bottom: 20vh;
@@ -165,15 +161,14 @@
         line-height: calc(5 * var(--gutter));
     }
 
-    main,
-    footer {
-        margin-left: 40px;
-        margin-right: 40px;
+    aside {
+        display: none;
     }
 
-    article,
+    main, 
     footer {
-        max-width: 70%;
+        margin-left: calc(1.5 * var(--gutter));
+        margin-right: calc(1.5 * var(--gutter));
     }
 }
 
@@ -204,8 +199,6 @@
     }
 
     main {
-        margin-left: 40px;
-        margin-right: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -213,34 +206,36 @@
     }
 
     article {
-        width: 70%;
-        float: left;
         top: 0;
+    } 
+
+    article, footer {
+        width: 80%;
+        margin-left: 20%;
+        float: right;
+    }
+
+    .fullnav {
+        display: none;
+    }
+
+    .shortnav {
+        display: inline-block;
     }
 
     aside {
         position: sticky;
-        float: right;
+        float: left;
         display: inline-flex;
-        margin-left: 70%;
-        max-width: 30%;
+        max-width: 5%;
+        margin-left: 0%;
         /*flex-wrap: wrap;*/
-        top: 32px;
+        top: 2em;
         height: 0; /*an anchor point for the nav, resets the height*/
-    }
-    
-
-    button {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-right: 8px;
-        padding-left: 8px;
-        margin-top: 5px;
-        min-width: 10em;
     }
 
     a {
-        font-size: var(--typography-a);   
+        font-size: calc(1 * var(--typography-a));   
     }
 
     button {
@@ -249,8 +244,9 @@
         padding-right: calc(0.5 * var(--gutter));
         padding-left: calc(0.5 * var(--gutter));
         margin-top: calc(0.4 * var(--gutter));
-        min-width: 8em;
+        min-width: 3em;
         border-radius: 8px;
+        text-align: center;
     }
 
     button:hover {
@@ -266,22 +262,71 @@
         padding-top: calc(2 * var(--typography-blockquote));
         padding-bottom: calc(1.5 * var(--typography-blockquote));
     }
-
-    footer {
-        width: 60%;
-    }
-
 }
 
-@media (min-width: 650px) {
+@media (min-width: 900px) {
     :root {
         --typography-base: 1.2rem;
     }
 
+    body > header {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    h1 {
+        font-size: calc(1.8 * var(--typography-h1)); 
+        line-height: calc(7 * var(--gutter));
+    }
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
     article {
         width: 50%;
-        float: left;
+        float: right;
         top: 0;
+        margin-left: 50%;
+    }
+
+    .fullnav {
+        display: inline-flex;
+    }
+
+    .shortnav {
+        display: none;
+    }
+
+    aside {
+        position: sticky;
+        float: left;
+        display: inline-flex;
+        max-width: 35%;
+        margin-left: 0%;
+        /*flex-wrap: wrap;*/
+        top: 2em;
+        height: 0; /*an anchor point for the nav, resets the height*/
+    }
+
+    button {
+        padding-top: calc(0.3 * var(--gutter));
+        padding-bottom: calc(0.3 * var(--gutter));
+        padding-right: calc(0.5 * var(--gutter));
+        padding-left: calc(0.5 * var(--gutter));
+        margin-top: calc(0.4 * var(--gutter));
+        min-width: 5em;
+        border-radius: 8px;
+        text-align: left;
+    }
+
+    hr {
+        padding-top: calc(1 * var(--gutter));
     }
 }
 
