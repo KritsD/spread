@@ -205,15 +205,16 @@
         top: 0;
     }
 
-    article {
-        top: 0;
-    } 
-
-    article, footer {
+    article{
         width: 80%;
         margin-left: 20%;
         float: right;
+        top: 0;
     }
+
+    footer > p {
+      margin-left: 20%;
+    } 
 
     .fullnav {
         display: none;
@@ -307,7 +308,7 @@
         position: sticky;
         float: left;
         display: inline-flex;
-        max-width: 35%;
+        max-width: 40%;
         margin-left: 0%;
         /*flex-wrap: wrap;*/
         top: 2em;
@@ -320,7 +321,7 @@
         padding-right: calc(0.5 * var(--gutter));
         padding-left: calc(0.5 * var(--gutter));
         margin-top: calc(0.4 * var(--gutter));
-        min-width: 5em;
+        min-width: 10em;
         border-radius: 8px;
         text-align: left;
     }
