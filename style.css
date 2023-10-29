@@ -217,15 +217,18 @@
         float: left;
         top: 0;
     }
-    
+
     aside {
         position: sticky;
         float: right;
+        display: inline-flex;
         margin-left: 70%;
         max-width: 30%;
+        /*flex-wrap: wrap;*/
         top: 32px;
         height: 0; /*an anchor point for the nav, resets the height*/
     }
+    
 
     button {
         padding-top: 3px;
@@ -234,18 +237,6 @@
         padding-left: 8px;
         margin-top: 5px;
         min-width: 10em;
-    }
-
-    /* Navigation Bar */
-    aside {
-        position: sticky;
-        float: right;
-        display: contents;
-        margin-left: 70%;
-        max-width: 30%;
-        /*flex-wrap: wrap;*/
-        top: 32px;
-        height: 0; /*an anchor point for the nav, resets the height*/
     }
 
     a {
