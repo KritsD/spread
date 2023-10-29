@@ -24,10 +24,28 @@
 }
 
 @media screen {
+
     body > header {
         background-image: var(--background-image);
+        color: white;
         padding-top: 20vh;
         padding-bottom: 20vh;
+    }
+
+    main, 
+    footer {
+        margin-left: calc(1.5 * var(--gutter));
+        margin-right: calc(1.5 * var(--gutter));
+    }
+
+    aside {
+        display: none;
+    }
+
+    blockquote {
+        background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text;
     }
 }
 
@@ -331,6 +349,29 @@
     }
 }
 
+@media print {
+
+    body > header {
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+        /*///ASK FOR GRADIENT IN TEXT///*/
+        color: linear-gradient(rgb(72, 73, 81), rgb(0, 0, 0));
+    }
+
+    .shortnav {
+        display: none;
+    }
+
+    blockquote {
+        color: black;
+    }
+    
+    .chapter {
+        break-before: page;
+    }
+
+}
+
 /* START OF GENERAL CODE, APPLIES TO ALL! */
 
 h1 {
@@ -397,9 +438,6 @@ a:not([href^="#"]):hover{
 /*start of blockquote styling*/
 blockquote {
     font-family: 'Times New Roman';
-    background: linear-gradient(rgb(51, 75, 255), rgb(0, 0, 0));
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
 }
 
 ol {
