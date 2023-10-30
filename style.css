@@ -26,9 +26,9 @@
 
 @media screen {
     :root {
-         --typography-base: 1rem;
+         --typography-base: 0.8rem;
 
-        --typography-h1: calc(3.8 * var(--typography-base));
+        --typography-h1: calc(3.5 * var(--typography-base));
         --typography-h2: calc(1.5 * var(--typography-base));
         --typography-h3: calc(4 * var(--typography-base));
         --typography-blockquote: calc(2.2 * var(--typography-base));
@@ -58,6 +58,10 @@
     h1 {
         font-size: var(--typography-h1); 
         line-height: calc(4 * var(--gutter));
+    }
+
+    h2 {
+        font-size: var(--typography-h2);
     }
 
     h3 {
@@ -355,18 +359,26 @@
 
     :root {
         --typography-base: 1.2rem;
-        --typography-h1: cacl(2 * var(--typography-base));
+    }
+
+    h1 {
+        font-size: calc(6 * var(--typography-base));
+        line-height: calc(7 * var(--gutter));
     }
 
     body > header {
-        padding-top: 30vh;
-        padding-bottom: 30vh;
+        padding-top: 25vh;
+        padding-bottom: 28vh;
         /*///ASK FOR GRADIENT IN TEXT///*/
         color: linear-gradient(rgb(72, 73, 81), rgb(0, 0, 0));
     }
 
     .shortnav {
         display: none;
+    }
+
+    h2 {
+        font-size: calc(1.5 * var(--typography-base));
     }
 
     blockquote {
@@ -387,13 +399,7 @@
     p {
         page-break-inside: avoid;
     }
-
-    @page {
-        margin: 4in;
-    }
 }
-
-
 
 /* START OF GENERAL CODE, APPLIES TO ALL! */
 
@@ -451,7 +457,7 @@ button:hover {
 
 h2 {
     font-family: 'Roboto Mono', monospace;
-    font-size: var(--typography-h2);
+    /*font-size: var(--typography-h2);*/
     padding-bottom: calc(1 * var(--gutter));
 }
 
