@@ -129,7 +129,6 @@
     aside {
        display: none;
     }
-
     hr {
         margin-top: calc(1 * var(--gutter));
         margin-bottom: calc(1 * var(--gutter));
