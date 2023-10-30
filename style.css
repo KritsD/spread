@@ -24,22 +24,39 @@
 }
 
 @media screen {
+    :root {
+         --typography-base: 0.9rem;
 
+        --typography-h1: calc(3.8 * var(--typography-base));
+        --typography-h2: calc(1.5 * var(--typography-base));
+        --typography-h3: calc(4 * var(--typography-base));
+        --typography-blockquote: calc(2.2 * var(--typography-base));
+        --typography-footerp: calc(0.8 * var(--typography-base));
+        --typography-a: calc(0.9 * var(--typography-base));
+
+        --gutter: var(--typography-base);
+        }
+    
     body > header {
         background-image: var(--background-image);
         color: white;
-        padding-top: 20vh;
-        padding-bottom: 20vh;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
     }
 
     main, 
     footer {
-        margin-left: calc(1.5 * var(--gutter));
-        margin-right: calc(1.5 * var(--gutter));
+        margin-left: calc(1.8 * var(--gutter));
+        margin-right: calc(1.8 * var(--gutter));
     }
 
     aside {
         display: none;
+    }
+
+    h1 {
+        font-size: var(--typography-h1); 
+        line-height: calc(4 * var(--gutter));
     }
 
     blockquote {
@@ -47,7 +64,27 @@
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text;
     }
+    
+    a:not([href^="#"]) {
+        font-size: calc(1.2 *var(--typgraphy-base));
+    }
 
+    blockquote {
+        padding-top: calc(1.2 * var(--typography-blockquote));
+        padding-bottom: var(--typography-blockquote);
+        margin-left: var(--typography-blockquote);
+        margin-right: var(--typography-blockquote);
+    }
+
+    blockquote > li {
+        font-size: var(--typography-blockquote);
+        /*padding-top: calc(3 * var(--gutter));*/
+    }
+
+    .source {
+        font-size: calc(0.8 * var(--typography-base));
+    }
+    
     h3, 
     h2 > em {
         color: rgb(1, 1, 213);
@@ -57,17 +94,8 @@
 /* Mobile */
 @media (min-width: 375px) {
     :root {
-            --typography-base: 1rem;
-
-            --typography-h1: calc(3.8 * var(--typography-base));
-            --typography-h2: calc(1.5 * var(--typography-base));
-            --typography-h3: calc(4 * var(--typography-base));
-            --typography-blockquote: calc(2.2 * var(--typography-base));
-            --typography-footerp: calc(0.8 * var(--typography-base));
-            --typography-a: calc(0.9 * var(--typography-base));
-
-            --gutter: var(--typography-base);
-        }
+        --typography-base: 1rem;
+    }
 
     header {
         padding-left: calc(2 * var(--gutter));
@@ -81,11 +109,6 @@
             padding-bottom: 24vh;
         }
 
-    header > ol {
-        display: flex;
-        justify-content: center;
-    }
-
     h1 {
         font-size: var(--typography-h1); 
         line-height: calc(4 * var(--gutter));
@@ -97,38 +120,19 @@
         justify-content: space-between;
     }
 
-    .author {
-        width: 100%;
-    }
-
     main, 
     footer {
         margin-left: calc(1.5 * var(--gutter));
         margin-right: calc(1.5 * var(--gutter));
     }
 
-    p {
-        font-size: var(--typography-base);
-        padding-top: calc(1 * var(--gutter));
-        line-height: calc(1.5 * var(--gutter));
-    }
-
     aside {
        display: none;
-    }
-
-    .chapter {
-        margin-top: calc(2.5 * var(--gutter));
     }
 
     hr {
         margin-top: calc(1 * var(--gutter));
         margin-bottom: calc(1 * var(--gutter));
-    }
-    
-    h2 {
-        font-size: var(--typography-h2);
-        padding-bottom: calc(1 * var(--gutter));
     }
 
     /* chapter number*/
@@ -154,11 +158,6 @@
 
     .source {
         font-size: calc(0.8 * var(--typography-base));
-    }
-
-    footer {
-        margin-top: calc(4 * var(--gutter));
-        margin-bottom: calc(2 * var(--gutter));
     }
 
     footer p {
@@ -197,7 +196,7 @@
 
 @media (min-width: 650px) {
     :root {
-        --typography-base: 1.2rem;
+        --typography-base: 1.1rem;
         --typography-a: calc(0.8 * var(--typography-base));
     }
 
@@ -209,11 +208,6 @@
 
     a {
         font-size: var(--typography-a);
-    }
-
-    body > header {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
     }
 
     h1 {
@@ -258,8 +252,8 @@
         height: 0; /*an anchor point for the nav, resets the height*/
     }
 
-    a {
-        font-size: calc(1 * var(--typography-a));   
+    a:not([href^="#"]) {
+        font-size: calc(1.4 * var(--typography-a));   
     }
 
     button {
@@ -331,9 +325,7 @@
         position: sticky;
         float: left;
         display: inline-flex;
-        /*max-width: 5%;*/
         margin-left: 0%;
-        /*flex-wrap: wrap;*/
         top: 2em;
         height: 0; /*an anchor point for the nav, resets the height*/
     }
@@ -341,17 +333,18 @@
     button {
         padding-top: calc(0.3 * var(--gutter));
         padding-bottom: calc(0.3 * var(--gutter));
-        padding-right: calc(0.5 * var(--gutter));
-        padding-left: calc(0.5 * var(--gutter));
+        padding-right: calc(0.7 * var(--gutter));
+        padding-left: calc(0.7 * var(--gutter));
         margin-top: calc(0.4 * var(--gutter));
-        min-width: 20em;
+        min-width: 21em;
         border-radius: 8px;
         text-align: left;
     }
 
-    hr {
-        padding-top: calc(1 * var(--gutter));
-    }
+    footer > p {
+        margin-left: 50%;
+        width: 48%;
+      } 
 }
 
 @media print {
@@ -397,6 +390,25 @@ h1 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+h1 > li:nth-child(3) {
+    text-align: right;
+}
+
+header > ol {
+    display: flex;
+    justify-content: center;
+}
+
+.author {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* straight line across*/
 hr :first-child {
     width:100vw; /*should take up the whole screen?*/
@@ -406,6 +418,7 @@ hr {
     display: block;
     height: 5px;
     border-top: 1px solid grey;
+    padding-top: calc(1 * var(--gutter));
 }
 
 button {
@@ -421,8 +434,14 @@ button:hover {
     color: rgb(1, 1, 213); 
 }
 
+.chapter {
+    margin-top: calc(2.5 * var(--gutter));
+}
+
 h2 {
     font-family: 'Roboto Mono', monospace;
+    font-size: var(--typography-h2);
+    padding-bottom: calc(1 * var(--gutter));
 }
 
 /* chapter number */
@@ -436,6 +455,9 @@ h3 {
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: var(--typography-base);
+    padding-top: calc(1 * var(--gutter));
+    line-height: calc(1.5 * var(--gutter));
 }
 
 /* links in body */
@@ -452,6 +474,10 @@ a:not([href^="#"]):hover{
 /*start of blockquote styling*/
 blockquote {
     font-family: 'Times New Roman';
+}
+
+blockquote :first-child {
+    padding-top: 0;
 }
 
 ol {
@@ -481,9 +507,14 @@ li:last-child {
     text-align: center;
     justify-content: center;
     font-family: 'Roboto Mono';
-    }
+}
 
 /*end of blockquote styling*/
+
+footer {
+    margin-top: calc(4 * var(--gutter));
+    margin-bottom: calc(2 * var(--gutter));
+}
 
 footer p {
     font-family: 'Roboto Mono';
