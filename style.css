@@ -75,7 +75,7 @@
     }
     
     a:not([href^="#"]) {
-        font-size: calc(1.2 *var(--typgraphy-base));
+        font-size: calc(1.3 *var(--typgraphy-base));
     }
 
     blockquote {
@@ -148,10 +148,6 @@
         font-size: var(--typography-h3);
     }
 
-    a:not([href^="#"]) {
-        font-size: calc(1.2 *var(--typgraphy-base));
-    }
-
     blockquote {
         padding-top: calc(1.2 * var(--typography-blockquote));
         padding-bottom: var(--typography-blockquote);
@@ -181,6 +177,12 @@
         --typography-a: calc(0.6 * var(--typography-base));
     }
 
+    html {
+        display: flex;
+        flex-direction: column;
+        scroll-behavior: smooth; 
+    }
+
     body > header {
         padding-top: 20vh;
         padding-bottom: 20vh;
@@ -191,8 +193,51 @@
         line-height: calc(5 * var(--gutter));
     }
 
-    aside {
+    /*aside {
         display: none;
+    }*/
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+    }
+
+    article{
+        width: 80%;
+        margin-left: 20%;
+        float: right;
+        top: 0;
+    }
+
+    .fullnav {
+        display: none;
+    }
+
+    .shortnav {
+        display: inline-block;
+    }
+
+    aside {
+        position: sticky;
+        float: left;
+        display: inline-flex;
+        max-width: 5%;
+        margin-left: 2%;
+        top: 2em;
+        height: 0; /*an anchor point for the nav, resets the height*/
+    }
+
+    button {
+        padding-top: calc(0.3 * var(--gutter));
+        padding-bottom: calc(0.3 * var(--gutter));
+        padding-right: calc(0.5 * var(--gutter));
+        padding-left: calc(0.5 * var(--gutter));
+        margin-top: calc(0.4 * var(--gutter));
+        min-width: 3em;
+        border-radius: 8px;
+        text-align: center;
     }
 
     main, 
@@ -205,13 +250,7 @@
 @media (min-width: 650px) {
     :root {
         --typography-base: 1.1rem;
-        --typography-a: calc(0.8 * var(--typography-base));
-    }
-
-    html {
-        display: flex;
-        flex-direction: column;
-        scroll-behavior: smooth; 
+        --typography-a: calc(0.9 * var(--typography-base));
     }
 
     a {
@@ -254,25 +293,14 @@
         float: left;
         display: inline-flex;
         max-width: 5%;
-        margin-left: 0%;
-        /*flex-wrap: wrap;*/
+        margin-left: 2%;
         top: 2em;
         height: 0; /*an anchor point for the nav, resets the height*/
     }
 
-    a:not([href^="#"]) {
-        font-size: calc(1.4 * var(--typography-a));   
-    }
-
     button {
-        padding-top: calc(0.3 * var(--gutter));
-        padding-bottom: calc(0.3 * var(--gutter));
-        padding-right: calc(0.5 * var(--gutter));
-        padding-left: calc(0.5 * var(--gutter));
-        margin-top: calc(0.4 * var(--gutter));
-        min-width: 3em;
-        border-radius: 8px;
-        text-align: center;
+        padding-right: calc(1.5 * var(--gutter));
+        padding-left: calc(1.5 * var(--gutter));
     }
 
     button:hover {
@@ -296,8 +324,8 @@
     }
 
     body > header {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-top: 13vh;
+        padding-bottom: 13vh;
     }
 
     h1 {
@@ -339,12 +367,9 @@
     }
 
     button {
-        padding-top: calc(0.3 * var(--gutter));
-        padding-bottom: calc(0.3 * var(--gutter));
         padding-right: calc(0.7 * var(--gutter));
         padding-left: calc(0.7 * var(--gutter));
-        margin-top: calc(0.4 * var(--gutter));
-        min-width: 21em;
+        min-width: 23em;
         border-radius: 8px;
         text-align: left;
     }
@@ -442,6 +467,7 @@ button {
     font-family: 'Roboto Mono';
     background: rgb(1, 1, 213);
     color: white;
+    border: 1px  rgb(1, 1, 213);
 }
 
 button:hover {
@@ -473,8 +499,15 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: var(--typography-base);
-    padding-top: calc(1 * var(--gutter));
     line-height: calc(1.5 * var(--gutter));
+}
+
+p:not([class^="intro"]) {
+    padding-top: calc(1 * var(--gutter));
+}
+
+.intro {
+    padding-top: 0.1em;
 }
 
 /* links in body */
