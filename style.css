@@ -11,7 +11,7 @@
 :root {
     --typography-base: 1rem; /* 1 rem is p */
 
-    --typogaphy-h1: calc(4 * var(--typgraphy-base)); /* article title */
+    --typogaphy-h1: calc(4 * var(--typography-base)); /* article title */
     --typography-h2: calc(3 * var(--typography-base)); /*chapter title */
     --typography-h3: calc(4 * var(--typography-base)); /*chapter number*/
     --typography-blockquote: calc(3 * var(--typography-base)); /*blockquote*/
@@ -435,25 +435,34 @@
 
     :root {
         --typography-base: 1rem;
+
+        --typography-blockquote: calc(2.5 * var(--typography-base));
     }
 
     h1 {
-        font-size: calc(8 * var(--typography-base));
-        line-height: calc(7 * var(--gutter));
+        font-size: calc(6.5* var(--typography-base));
+        line-height: calc(6 * var(--gutter));
     }
 
     body > header {
-        padding-top: 28vh;
+        padding-top: 25vh;
         padding-bottom: 25vh;
         /*///ASK FOR GRADIENT IN TEXT///*/
         background: linear-gradient(rgb(199, 199, 199), black);
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+    }
+
+    hr {
+        padding: 0pt;
     }
 
     .author {
         width: 100%;
         justify-content: center;
+        break-before:page;
     }
 
     .articlebutton {
@@ -473,10 +482,17 @@
         background: linear-gradient(rgb(199, 199, 199), black);
         -webkit-text-fill-color: transparent; 
         -webkit-background-clip: text;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        padding: 5pt;
+        margin-top: calc(3 * var(--gutter));
+        margin-bottom: calc(3 * var(--gutter));
+    }
+
+    blockquote > li {
         font-size: var(--typography-blockquote);
     }
-    
-    
+
     .chapter {
         margin-top: var(--gutter);
         break-before: page;
@@ -487,18 +503,29 @@
         color: rgb(175, 170, 170);
     }
 
-    p {
+    p > .author {
         page-break-inside: avoid;
     }
 
-    a:not([href^="#"]) {
-        font-size: calc(1.2 * var(--typography-a));
+    p {
+        margin-top: var(--gutter);
+        font-size: var(--typography-base);
     }
 
+    a:not([href^="#"]) {
+        font-size: calc(1 * var(--typography-base));
+    }
+
+    footer p {
+        font-size: calc(0.8 * var(--typography-base));
+    }
 }
 
 @page {
-	margin: 0.5in;
+	margin-top: 1in;
+    margin-bottom: 1in;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
 }
 
 /* START OF GENERAL CODE, APPLIES TO ALL! */
