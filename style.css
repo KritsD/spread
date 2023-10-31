@@ -135,9 +135,11 @@
         margin-right: calc(1.5 * var(--gutter));
     }
 
-    /*aside {
-       display: none;
-    }*/
+    article,
+    footer > p {
+        width: 80%;
+        margin-left: 20%;
+    }
 
     main {
         display: flex;
@@ -147,8 +149,6 @@
     }
 
     article{
-        width: 80%;
-        margin-left: 20%;
         float: right;
         top: 0;
     }
