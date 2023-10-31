@@ -26,7 +26,7 @@
 
 @media screen {
     :root {
-         --typography-base: 0.8rem;
+         --typography-base: 0.9rem;
 
         --typography-h1: calc(3.5 * var(--typography-base));
         --typography-h2: calc(1.5 * var(--typography-base));
@@ -60,6 +60,11 @@
         line-height: calc(4 * var(--gutter));
     }
 
+    hr {
+        margin-top: calc(1 * var(--gutter));
+        margin-bottom: calc(1 * var(--gutter));
+    }
+
     h2 {
         font-size: var(--typography-h2);
     }
@@ -75,7 +80,7 @@
     }
     
     a:not([href^="#"]) {
-        font-size: calc(1.8 *var(--typgraphy-base));
+        font-size: calc(1.1b *var(--typography-base));
     }
 
     blockquote {
@@ -175,7 +180,7 @@
         padding-bottom: calc(0.3 * var(--gutter));
         padding-right: calc(0.3 * var(--gutter));
         padding-left: calc(0.3 * var(--gutter));
-        margin-top: calc(0.4 * var(--gutter));
+        margin-bottom: calc(0.8 * var(--gutter));
         min-width: 2.5em;
         border-radius: 8px;
         text-align: center;
@@ -273,7 +278,7 @@
         padding-bottom: calc(0.3 * var(--gutter));
         padding-right: calc(0.5 * var(--gutter));
         padding-left: calc(0.5 * var(--gutter));
-        margin-top: calc(0.4 * var(--gutter));
+        margin-bottom: calc(0.8 * var(--gutter));
         min-width: 3em;
         border-radius: 8px;
         text-align: center;
@@ -423,6 +428,7 @@
         min-width: 23em;
         border-radius: 8px;
         text-align: left;
+        margin-bottom: calc(0.6 * var(--gutter));
     }
 
     footer > p {
