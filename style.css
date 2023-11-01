@@ -248,11 +248,10 @@
         top: 0;
     }
 
-    article {
+    article,
+    footer > p {
         max-width: 70%;
         margin-left: 25%;
-        float: right;
-        top: 0;
     }
 
     .fullnav {
@@ -326,15 +325,10 @@
         top: 0;
     }
 
-    article{
-        width: 70%;
-        margin-left: 25%;
-        float: right;
-        top: 0;
-    }
-
+    article,
     footer > p {
-      margin-left: 20%;
+      margin-left: 25%;
+      width: 70%;
     } 
 
     .fullnav {
@@ -350,7 +344,7 @@
         float: left;
         display: inline-flex;
         max-width: 5%;
-        margin-left: 2.5%;
+        margin-left: 5%;
         top: 2em;
         height: 0; /*an anchor point for the nav, resets the height*/
     }
@@ -358,6 +352,8 @@
     button {
         padding-right: calc(1.5 * var(--gutter));
         padding-left: calc(1.5 * var(--gutter));
+        padding-top: calc(0.5 * var(--gutter));
+        padding-bottom: calc(0.5 * var(--gutter));
     }
 
     button:hover {
@@ -398,10 +394,9 @@
         top: 0;
     }
 
-    article {
+    article,
+    footer > p {
         width: 50%;
-        float: right;
-        top: 0;
         margin-left: 50%;
     }
 
@@ -425,16 +420,13 @@
     button {
         padding-right: calc(0.7 * var(--gutter));
         padding-left: calc(0.7 * var(--gutter));
+        padding-top: calc(0.5 * var(--gutter));
+        padding-bottom: calc(0.5 * var(--gutter));
         min-width: 23em;
         border-radius: 8px;
         text-align: left;
         margin-bottom: calc(0.6 * var(--gutter));
     }
-
-    footer > p {
-        margin-left: 50%;
-        width: 48%;
-      } 
 }
 
 @media print {
@@ -641,6 +633,10 @@ a:not([href^="#"]):hover{
 
 a:not([href^="#"]):visited {
     color: grey;
+ }
+
+ a:not([href^="#"]):visited:hover {
+    color: rgb(1, 1, 213);
  }
 
 /*start of blockquote styling*/
