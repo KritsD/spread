@@ -675,6 +675,8 @@ li:last-child {
     text-align: center;
     justify-content: center;
     font-family: 'Roboto Mono';
+    padding-top: var(--gutter);
+    line-height: var(--gutter);
 }
 
 /*end of blockquote styling*/
